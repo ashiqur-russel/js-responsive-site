@@ -464,7 +464,103 @@
 
 /* Servicd Section */
 
+.services{
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
 
+.services h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(#ff0844 0%,#e45f37 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
 
+.services_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.services_card{
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde,#fc00ff 100%);
+  transition: 0.3s ease-in;
+}
+
+.services_card:nth-child(2){
+   background:#1fa2ff ;
+    background: -webkit-linear-gradient(to right, #a6ffcb,#1fa2ff);
+    background: linear-gradient(to right,#a6ffcb,#12d8fa,#1fa2ff);
+    color: #fff;
+}
+.services_card:nth-child(3){
+     background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+
+}
+
+.services_card h2{
+  text-align: center;
+}
+
+.services_card p{
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+.services_btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.services_card button{
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  outline: none;
+  background: #131313;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.services_card button:hover{
+  cursor: pointer;
+}
+.services_card:hover{
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1300px) {
+  .services_wrapper{
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media screen and (max-width:768px) {
+  .services_wrapper{
+    grid-template-columns: 1fr; 
+  }
+}
+
+/* Footer Section */
 
 
